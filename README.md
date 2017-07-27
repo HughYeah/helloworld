@@ -1,3 +1,9 @@
+#项目名称
+Day1 exercise
+#项目简介
+联系人列表
+#作者姓名
+Hugh zhiming.ye
 # HughExam
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.5.
