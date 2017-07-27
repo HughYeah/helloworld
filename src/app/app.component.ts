@@ -7,44 +7,45 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  private id:number = 2;
-  private type:number = 1;
+  private id = 2;
+  private type = 1;
 
   users: Array<any> = [
     {
-      "id":0,
-      "name":"Hugh",
-      "sex":"Male",
-      "mobile":"15900000000",
-      "email":"hugh@qq.com"
+      'id': 0,
+      'name':  'Hugh',
+      'sex': 'Male',
+      'mobile' : '15900000000',
+      'email': 'hugh@qq.com'
     },
       {
-      "id":1,
-      "name":"Hugh1",
-      "sex":"Male",
-      "mobile":"15900000002",
-      "email":"hugh@qq.com"
+      'id': 1,
+      'name': 'Hugh1',
+      'sex': 'Male',
+      'mobile': '15900000002',
+      'email': 'hugh@qq.com'
     },
     {
-      "id":2,
-      "name":"Hugh2",
-      "sex":"Male",
-      "mobile":"15900000003",
-      "email":"hugh@qq.com"
+      'id' : 2,
+      'name': 'Hugh2',
+      'sex': 'Male',
+      'mobile': '15900000003',
+      'email': 'hugh@qq.com'
     }
-  ]
-deleteLast(){
-  this.users.pop()
+  ];
+deleteLast() {
+  this.users.pop();
 }
-saveNewUser(){
+saveNewUser() {
 
   this.users.push(   {
-      "id":this.id++,
-      "name":"Hugh"+this.id,
-      "sex":"Male",
-      "mobile":"15900000001",
-      "email":"hugh@qq.com"
-    })
+      'id': this.id++,
+      'name': 'Hugh' + this.id,
+      'sex': 'Male',
+      'mobile': '15900000001' ,
+      'email': 'hugh@qq.com'
+    }
+  );
 }
    compareAsccending(a, b) {
        return (a.id - b.id);
@@ -53,7 +54,7 @@ saveNewUser(){
        return (b.id - a.id);
   }
   compareRandom(a, b) {
-       return (b.id * Math.random() - a.id * Math.random());
+       return ((b.id + 1) * Math.random() - (a.id + 1) * Math.random());
   }
 
   sortByAsccending() {
